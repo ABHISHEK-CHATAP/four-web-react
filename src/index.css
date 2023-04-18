@@ -1,0 +1,644 @@
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+:root{
+  --bgcolor: #f1f5fd;
+  --primary-color:#6f5de7;
+  --text-color:#828286;
+  --main-text-color:#333333;
+
+}
+
+html{
+  font-size: 62.5%;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333333;
+}
+
+
+/*-------------------------------- Navbar CSS style 
+                        --------------------------------------------------------*/
+
+.navbar-bg{
+  background-color: var(--bgcolor);
+  padding: 2rem 0;
+  z-index: 99;
+  position: relative;
+}
+
+.navbar-brand{
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.navbar li{
+  padding: 0 1rem;
+}
+.navbar li a {
+  font-size: 1.7rem;
+  font-weight: lighter;
+  position: relative;
+}
+
+@media (min-width : 998px) and (max-width:1400px){
+  .navbar li a:hover{
+      color: var(--primary-color) !important;
+      text-shadow: 0 0.2rem 0.3rem rgba(183, 171, 255, 0.5);
+      border-bottom: 1px solid var(--primary-color);
+  }
+  .active {
+      font-weight: bold;
+      border-bottom: 1px solid #565387;
+    }
+}
+.active {
+  color: #6f5de7;
+  font-weight: bolder;
+
+}
+
+
+.btn-style{
+  width: 9.5rem;
+  height: 3.5rem;
+  border-radius: 2rem;
+  color: #fff;
+  background-color: var(--primary-color);
+  text-transform: capitalize;
+  font-size: 1.6rem;
+
+}
+.btn-style:first-child{
+  margin-right: 1rem;
+}
+.btn-style:hover{
+  border: 0.1rem solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+  box-shadow: 0 0.2rem 0.5rem rgba(183, 171, 255, 0.5);
+}
+
+.btn-style-border{
+  border: 0.1rem solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+  box-shadow: 0 0.2rem 0.5rem rgba(183, 171, 255, 0.5);
+}
+.btn-style-border:hover{
+  color: #fff;
+  background-color: var(--primary-color);
+  text-transform: capitalize;
+}
+
+
+
+/*--------------------------------  Navbar ends 
+                        --------------------------------------------------------*/                        
+
+/*--------------------------------  Header hero section starts
+                        --------------------------------------------------------*/
+
+header{
+height: 100vh;
+background-color: var(--bgcolor);
+width: 100%;
+
+}
+.main-hero-container{
+ display: flex;
+ height: 80vh;
+}
+
+.main-hero-container h1{
+  text-transform: capitalize;
+  font-weight: bolder;
+  font-size: 41px;
+}
+.main-hero-para{
+  color: var(--text-color);
+  font-size: 1.5rem;
+  font-weight: lighter;
+  width: 75%;
+  margin: 3rem 0 5rem 0;
+}
+
+.main-hero-container h3{
+  font-weight: lighter;
+}
+.input-group{
+  position: relative !important;
+}
+.form-control-text{
+  position: absolute;
+  height: 4rem;
+  border: none;
+  outline-style: none;
+  padding-left: 1.5rem !important;
+  font-size: 1.4rem;
+  font-weight: lighter;
+}
+
+/* display flex 
+align items center 
+
+se kaam hua 
+text center me aaya */
+
+
+.input-group-button{
+position: absolute;
+right: 25%;
+top: 0.5rem ;
+color: #fff;
+background-color: var(--primary-color);
+height: 3rem;
+width: 23%;
+text-align: center;
+border-radius: 2rem !important;
+                   
+align-items: center;             
+font-size: 1.5rem;     
+       
+}
+
+/* -------------   hero imagees section------------*/
+
+.main-herosection-images{
+  position: relative;
+}
+.main-herosection-images img{
+  width: 63%;
+  height: 80%;
+  margin-top: 10rem;
+  box-shadow: 0 1rem 0.8rem rgba(0,0,0,0.25);
+  border-radius: 1.5rem;
+  position: absolute;
+}
+.main-herosection-images .main-hero-img2{
+  position: absolute;
+  width: 50%;
+  height: 30%;
+  left: 47%;
+  top: -9%;
+  box-shadow:  0.9rem 0 0.8rem rgba(0,0,0,0.25);
+
+
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down {
+  0%{
+    transform: translateX(10px);
+  }
+  100%{
+    transform: translateX(-10px);
+  }
+}
+
+@keyframes up-down {
+0%{
+    transform: translateX(10px);
+}
+100%{
+    transform: translateX(-10px);
+}
+}
+
+
+
+/*--------------------------------  Header hero section Ends 
+                        --------------------------------------------------------*/
+
+/*--------------------------------  Work section starts 
+                        --------------------------------------------------------*/
+
+.work-container{
+  width: 85vw;
+  background-color: rgb(255, 255, 255);
+  padding: 5rem;
+  box-shadow: 0 0.4rem 1.2rem rgba(0,0,0,0.2);
+  border-radius: 0.5rem;
+  margin-top: -7rem;
+  height: 36rem;
+}
+
+.work-container .main-heading{
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-bottom: 3rem;
+  word-spacing: 1rem;
+}
+.work-container-subdiv{
+  padding: 0 3rem;
+}
+.work-container .sub-heading{
+  font-size: 1.8rem;
+  font-weight: 100%;
+  width: 22rem;
+}
+#icon{
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin: 2rem auto;
+}
+
+
+
+/*--------------------------------  Work section ends
+                        --------------------------------------------------------*/
+
+/*--------------------------------  About us section 
+                        --------------------------------------------------------*/
+.common-section{
+  margin: 7rem 0;
+}
+.our-services img{
+  box-shadow: rgba(0,0,0,0.25) 0px 0.8rem 0.8rem;
+  border-radius: 0.9rem;
+  align-items: center;
+  position: relative;
+  margin-top: 5rem;
+  width: 25rem;
+}
+.our-services .mini-title{
+  text-align: left;
+}
+
+.our-services .main-heading{
+  font-weight: bolder;
+  margin-top: 1.5rem;
+  text-align: left;
+}
+.our-services-info{
+  margin-top: 2rem;
+  margin-bottom: -5.9rem;
+}
+.our-services .our-services-number{
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 0.1rem solid var(--primary-color);
+  font-size: 1.5rem;
+  color: #6f5de7;
+  place-items: center;
+}
+.our-services .our-services-data{
+  padding-left: 2rem;
+  text-align: left;
+}
+.main-hero-para{
+  margin-top: 1rem;
+}
+.learn-more{
+margin-left: -30rem;margin-top: 1rem;
+}
+
+ /* 2nd component same as it isa above */
+   /* 2nd component same as it isa above */
+.our-services-right-side{
+  margin-top: 10rem;
+}
+
+.abhi{
+  
+  margin-left: 0rem;
+}
+.learn{
+  margin-left: -40rem;margin-top: 1rem;
+  }
+.second-container{
+      padding-left: 7rem;
+}
+.hero-img{
+  margin-left: -15rem;
+}
+
+
+
+
+/*--------------------------------  About us section  ends
+                        --------------------------------------------------------*/
+
+/*--------------------------------  Service section starts
+                        --------------------------------------------------------*/
+
+.service-main-container{
+  margin-top: 0rem;
+  padding: 2rem 0;
+}
+.service-main-container .main-heading{
+  margin: 3rem 0;
+}
+.work-container-subdivv{
+  box-shadow: 0 0.1rem 0.5rem rgba(0,0,0,0.16);
+}
+.work-container-subdivv:hover {
+background-color: var(--bgcolor);
+cursor: pointer;
+}
+.work-container-subdivv .main-hero-para{
+  width: 100%;
+}
+#iconnn{
+  text-align: left;
+  margin: 2rem 0;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media (min-width:1400px){
+.service-container .col-xxl-4 {
+  flex: 0 0 auto;
+  width: 30% !important;
+  margin: auto;
+}
+}
+
+@media(min-width: 992px){
+  .service-container .col-lg-4{
+      flex: 0 0 auto;
+      width: 30% !important;
+      margin: 2.2rem auto;   
+  }
+}
+@media(min-width: 768px){
+  .service-container .col-lg-4{
+      flex: 0 0 auto;
+      width: 30% !important;
+      margin: 2.2rem auto;   
+  }
+}
+
+@media(min-width: 320px){
+  .service-container .col-11{
+      flex: 0 0 auto;
+      margin: 1.5rem auto;   
+  }
+}
+
+
+
+/*--------------------------------  Service section  ends
+                        --------------------------------------------------------*/
+
+/*-------------------------------- contact us starts
+                        --------------------------------------------------------*/
+
+
+.contactus-section{
+  margin: 10rem 0;
+}
+.contact-input-field{
+  margin-bottom: 3rem
+}
+.form-control{
+  height: 3rem;
+}
+.contact-rightside form .form-control{
+  border: 1px solid #ced4da;
+   height: 5rem;
+   border-radius: 0.5rem;
+   font-size: 1.3rem;
+   padding-left: 1rem;
+   font-weight: lighter;
+}
+.contact-rightside form .form-check-input{
+  width: 2rem;
+  height: 2rem;
+}
+
+.form-checkbox-style{
+  margin: 2rem 0;
+}
+.contact-rightside form .main-hero-para{
+  font-size: 1.5rem;
+  columns: var(--text-color);
+  margin: 0;
+  font-weight: lighter;
+  width: 75%;
+  padding: 0 2rem;
+}
+
+
+
+
+
+
+
+/*-------------------------------- contact us ends
+                        --------------------------------------------------------*/
+
+
+/*--------------------------------  Footer section starts
+                        --------------------------------------------------------*/
+
+footer{
+ padding: 2rem 0;
+ background-color: #182334;
+ color: #fff; 
+}
+footer h2{
+  color: #fff;
+}
+footer li{
+  list-style: none;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  color: #fff;
+  cursor: pointer;
+  margin: 0.8rem 0;
+  margin-left: -1rem;
+}
+footer li:hover {
+  color: var(--primary-color);
+}
+footer .main-hero-para{
+  margin: 0;
+  color: #fff;
+}
+
+
+/*--------------------------------  Footer section ends
+                        --------------------------------------------------------*/
+
+
+/*--------------------------------  respnsive media queries 
+                        --------------------------------------------------------*/
+
+                        
+@media (min-width: 1500px){
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+      max-width: 1500px !important
+  }
+
+}                         
+
+@media (min-width:1400px){
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+      max-width: 1400px;
+  }
+}
+
+
+/*--------------------------------  respnsive media queries 
+                        --------------------------------------------------------*/
+
+
+/*--------------------------------  respnsive media queries 
+                        --------------------------------------------------------*/
+
+  @media (max-width:998px){
+
+  
+
+      .navbar li a:hover{
+          color: var(--primary-color) !important;
+      }
+      .navbar .navbar-collapse {
+          margin-top: 1rem;
+          background-color: #fff;
+          padding: 2rem 1rem;
+      }
+      .input-group .btn-style{
+          font-size: 1.2rem;
+      }
+/* header section */
+
+.main-hero-container h1{
+font-size: 2.5rem;
+
+}
+.main-hero-container h3{
+  margin-top: -3rem;
+  
+}
+.main-hero-para{
+  font-size: 1.5rem;
+  padding-right: 1rem;
+  width: 100%;
+ 
+}
+
+.main-hero-container .header-left-side{
+  padding-left: 4rem;
+  margin-top: 2rem;
+}
+.main-herosection-images{
+  position: relative;
+  height: 25rem;
+}
+.header-right-side img {
+  width: 50%;
+  height: 85%;
+  margin-top: 35px;
+  margin-left: 3rem;
+  
+}
+.header-right-side .main-hero-img2{
+  position: absolute;
+  width: 40%;
+  height: 35%;
+  left: 43%;
+  top: -5%;
+  box-shadow: 0.8px 0rem 0.8rem rgba(0,0,0,0.25);
+}
+.input-group .input-group-button{
+  right: 26%;
+  width: 30%;
+}
+.work-container{
+  width: 80vw;
+  padding: 5rem 1rem;
+  height: 110vh;
+}
+.work-container .sub-heading{
+  width: 30rem;
+}
+.work-container .main-heading{
+  font-size: 2.7rem;
+  font-weight: bolder;
+  margin-bottom: 3rem;
+  word-spacing: 0rem;
+}
+.work-container-subdiv{
+  padding: 0 0rem;
+}
+
+/* how to use working */
+.our-services-rightside{
+  padding-left: 5rem;
+  margin-top: 5rem;
+}
+
+.our-services img{
+  margin-top: 0rem;
+  width: 20rem;
+  margin-left: 0rem;
+
+}
+.our-services .our-services-number{
+  margin-bottom: -3rem;
+  margin-left: -2rem;
+}
+.learn-more {
+  margin-left: -20rem;
+  margin-top: 1rem;
+}
+
+.second-container {
+  padding-left: 5rem;
+}
+.learn {
+  margin-left: -20rem;
+  margin-top: 1rem;
+}
+.service-main-container {
+  margin-top: 0rem;
+  padding: 0rem 0;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  margin-left: 4rem;
+  margin-top: -3rem;
+  margin-bottom: 5rem;
+}
+.fw-bold {
+  font-weight: 700!important;
+  text-align: center;
+  margin-top: -4rem;
+}
+#hero-img{
+  margin-left: -5rem;
+}
+
+
+}                      
