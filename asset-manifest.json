@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/four-web-react/static/css/main.dadb41b7.css",
+    "main.js": "/four-web-react/static/js/main.9fed8423.js",
+    "static/media/hero1.jpg": "/four-web-react/static/media/hero1.1bedf320a60c54f3eb40.jpg",
+    "index.html": "/four-web-react/index.html",
+    "main.dadb41b7.css.map": "/four-web-react/static/css/main.dadb41b7.css.map",
+    "main.9fed8423.js.map": "/four-web-react/static/js/main.9fed8423.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dadb41b7.css",
+    "static/js/main.9fed8423.js"
+  ]
+}
